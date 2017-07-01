@@ -45,3 +45,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.idb
+*.ilk
+*.pdb
+*.tmp
+vs2015
+vs2017
+bin/demo-d.exe

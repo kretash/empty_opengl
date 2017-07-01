@@ -26,7 +26,7 @@ int32_t _create_program(std::string vs_shader, std::string fs_shader) {
 	}
 
 	GLint vs = glCreateShader(GL_VERTEX_SHADER);
-	GLint v_size = strlen(vs_str.c_str());
+	GLint v_size = (GLint)strlen(vs_str.c_str());
 	const char *vs_char = vs_str.c_str();
 	glShaderSource(vs, 1, &vs_char, &v_size);
 	glCompileShader(vs);
@@ -40,7 +40,7 @@ int32_t _create_program(std::string vs_shader, std::string fs_shader) {
 	}
 
 	GLint fs = glCreateShader(GL_FRAGMENT_SHADER);
-	GLint f_size = strlen(fs_str.c_str());
+	GLint f_size = (GLint)strlen(fs_str.c_str());
 	const char *fs_char = fs_str.c_str();
 	glShaderSource(fs, 1, &fs_char, &f_size);
 	glCompileShader(fs);
